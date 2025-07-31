@@ -18,7 +18,7 @@ function CertificateViewer() {
         style={{ maxWidth: "100%", maxHeight: "700px", margin: "0 auto", boxShadow: "0 4px 24px rgba(0,0,0,0.15)", borderRadius: "12px", background: "transparent" }}
       />
       <p style={{ color: "#888", fontSize: "0.95em", marginTop: 10 }}>
-        This is a static certificate preview. To change, replace <code>src/Assets/certificate.png</code>.<br/>
+        This is a static certificate preview.<br/>
         For best results, use a PNG with transparent background and crop as needed.
       </p>
     </div>
@@ -64,7 +64,7 @@ function About() {
         <Toolstack />
 
         <h1 className="project-heading">
-          <strong className="purple">Certificates</strong>
+          <strong className="purple">Certificate</strong>
         </h1>
         <CertificateViewer />
         <Github />
