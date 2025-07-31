@@ -8,7 +8,7 @@ function Type() {
         strings: [
           "Front-End Developer",
           "Freelancer",
-          "Data Incoder",
+          "Data Encoder",
           
         ],
         autoStart: true,

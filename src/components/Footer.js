@@ -11,10 +11,9 @@ function Footer() {
   let date = new Date();
   let year = date.getFullYear();
   return (
-    <Container fluid className="footer">
+    <Container fluid className="footer">C
       <Row>
         <Col md="4" className="footer-copywright">
-          <h3>Designed and Developed by DNLDV</h3>
         </Col>
         <Col md="4" className="footer-copywright">
           <h3>Copyright © {year} SB</h3>
