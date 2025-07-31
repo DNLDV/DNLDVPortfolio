@@ -34,7 +34,7 @@ function AboutCard() {
           </ul>
 
           <p style={{ color: "rgb(155 126 172)" }}>
-            "For I know the plans I have for you,” declares the Lord, “plans to prosper you and not to harm you, plans to give you hope and a future."{" "}
+            <br></br>"For I know the plans I have for you,” declares the Lord, “plans to prosper you and not to harm you, plans to give you hope and a future."{" "}
           </p>
           <footer className="blockquote-footer">Jeremiah 29:11 NIV </footer>
         </blockquote>

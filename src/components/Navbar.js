@@ -39,7 +39,7 @@ function NavBar() {
     >
       <Container>
         <Navbar.Brand href="/" className="d-flex">
-          <span style={{ fontWeight: "bold", fontSize: "2rem", letterSpacing: "2px", color: "#c770f0" }}>DNL.DV</span>
+          <span style={{ fontWeight: 1000, fontSize: "2rem", letterSpacing: "2px", color: "#c770f0" }}><strong>DNL</strong></span>
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"

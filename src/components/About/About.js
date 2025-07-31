@@ -64,7 +64,8 @@ function About() {
         <Toolstack />
 
         <h1 className="project-heading">
-          <strong className="purple">Certificate</strong>
+          <strong className="purple">Certificate</strong> I Achievement
+
         </h1>
         <CertificateViewer />
         <Github />
