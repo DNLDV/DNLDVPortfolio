@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../Particle";
 import Github from "./Github";
@@ -6,6 +6,35 @@ import Techstack from "./Techstack";
 import Aboutcard from "./AboutCard";
 import laptopImg from "../../Assets/about.png";
 import Toolstack from "./Toolstack";
+import { Document, Page, pdfjs } from "react-pdf";
+import "react-pdf/dist/esm/Page/AnnotationLayer.css";
+pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
+
+// Display a static certificate file from the project (PDF or image)
+// Make sure the file exists at this path, or update the path as needed.
+import certificatePdf from "../../Assets/certificate.pdf";
+// import certificateImg from "../Assets/certificate.png"; // Uncomment if using image
+
+function CertificateViewer() {
+  const [width, setWidth] = useState(1200);
+  useEffect(() => {
+    setWidth(window.innerWidth);
+  }, []);
+
+  return (
+    <div style={{ marginBottom: "30px", textAlign: "center" }}>
+      {/* For PDF certificate */}
+      <Document file={certificatePdf} className="d-flex justify-content-center">
+        <Page pageNumber={1} scale={width > 786 ? 2 : 1} />
+      </Document>
+      {/* For image certificate, use below instead and comment out the PDF block above */}
+      {/* <img src={certificateImg} alt="Certificate" style={{ maxWidth: "80%", maxHeight: "500px", margin: "0 auto" }} /> */}
+      <p style={{ color: "#888", fontSize: "0.95em", marginTop: 10 }}>
+        This is a static certificate preview. To change, replace <code>src/Assets/certificate.pdf</code>.
+      </p>
+    </div>
+  );
+}
 
 function About() {
   return (
@@ -48,10 +77,7 @@ function About() {
         <h1 className="project-heading">
           <strong className="purple">Certificates</strong>
         </h1>
-        <div style={{ marginBottom: "30px" }}>
-          <input type="file" accept="application/pdf,image/*" multiple style={{ marginBottom: "10px" }} />
-          <p style={{ color: "#888", fontSize: "0.95em" }}>You can upload your certificates here (PDF or image).</p>
-        </div>
+        <CertificateViewer />
         <Github />
       </Container>
     </Container>
