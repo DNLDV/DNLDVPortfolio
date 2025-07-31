@@ -45,6 +45,13 @@ function About() {
         </h1>
         <Toolstack />
 
+        <h1 className="project-heading">
+          <strong className="purple">Certificates</strong>
+        </h1>
+        <div style={{ marginBottom: "30px" }}>
+          <input type="file" accept="application/pdf,image/*" multiple style={{ marginBottom: "10px" }} />
+          <p style={{ color: "#888", fontSize: "0.95em" }}>You can upload your certificates here (PDF or image).</p>
+        </div>
         <Github />
       </Container>
     </Container>
