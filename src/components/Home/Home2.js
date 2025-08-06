@@ -93,7 +93,7 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.facebook.com/your-facebook-profile" // Replace with your Facebook profile link
+                  href="https://web.facebook.com/BecoyBistroFBofficial" // Replace with your Facebook profile link
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour home-social-icons"
