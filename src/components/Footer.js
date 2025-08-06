@@ -4,6 +4,7 @@ import {
   AiFillGithub,
   AiOutlineTwitter,
   AiFillInstagram,
+  AiFillFacebook,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 
@@ -48,6 +49,16 @@ function Footer() {
                 rel="noopener noreferrer"
               >
                 <FaLinkedinIn />
+              </a>
+            </li>
+            <li className="social-icons">
+              <a
+                href="https://web.facebook.com/BecoyBistroFBofficial" // Replace with your Facebook profile link
+                style={{ color: "white" }}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <AiFillFacebook />
               </a>
             </li>
             <li className="social-icons">
